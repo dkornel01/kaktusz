@@ -15,6 +15,8 @@ header{
 header h1{
     padding: auto;
     margin: auto;
+    grid-template-columns: 1fr;
+    display: grid;
     
 }
 a:hover {
@@ -31,14 +33,11 @@ article{
     text-align: justify;
     font-size: larger;
     font-weight: bold;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
 
 }
-aside{
-    grid-area: as ;
-}
-aside img{
-    width: 100%;
-}
+
 article img{
     width: 100%;
 }
@@ -53,12 +52,10 @@ main{
     font-size: 10px;
     padding: 0;
     margin: 0;
-    
-    grid-template-areas:
-    "h h"
-    "n n"
-    "as a"
-    "f f";
+    grid-template-areas:"h h h"
+                        "n n n"
+                        "a a a"
+                        "f f f" ;
     display: grid;
     width: 90%;
     max-width: 900px;
@@ -72,6 +69,10 @@ main{
                              "as"
                              "a"
                              "f";
+    }
+    article{
+        grid-template-columns: 1fr 1fr;
+        display: grid;
     }
     
 }
