@@ -14,8 +14,8 @@ header{
 }
 header h1{
     padding: auto;
-    margin: auto;
-    
+    margin:10%;
+
 }
 a:hover {
     background-color: orange;
