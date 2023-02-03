@@ -1,0 +1,64 @@
+
+header{
+    grid-area: h ;
+    background-color: deepskyblue;
+    border-top: 1px white solid;
+    height: 300px;
+    background-size: cover;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+header a:hover{
+    background-color: orange;
+}
+
+nav {
+    grid-area: n ;
+}
+article{
+    grid-area: a ;
+    float: left;
+    list-style: square;
+    text-align: justify;
+
+}
+aside{
+    grid-area: as ;
+}
+aside img{
+    width: 100%;
+}
+footer{
+    grid-area: f ;
+    text-align: center;
+}
+main{
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;
+    color: beige;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    
+    grid-template-areas:
+    "h h"
+    "n n"
+    "as a"
+    "f f";
+    display: grid;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    background-color:  dodgerblue;
+}
+@media screen and (max-width:700px) {
+    main{
+        grid-template-areas: "h"
+                             "n"
+                             "as"
+                             "a"
+                             "f";
+    }
+    
+}
