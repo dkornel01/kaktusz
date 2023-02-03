@@ -8,6 +8,14 @@ header{
     list-style: none;
     text-decoration: none;
     text-align: center;
+
+    font-size: xx-large;
+    font-weight: bolder;
+}
+header h1{
+    padding: auto;
+    margin: auto;
+    
 }
 header a:hover{
     background-color: orange;
@@ -21,12 +29,17 @@ article{
     float: left;
     list-style: square;
     text-align: justify;
+    font-size: larger;
+    font-weight: bold;
 
 }
 aside{
     grid-area: as ;
 }
 aside img{
+    width: 100%;
+}
+article img{
     width: 100%;
 }
 footer{
