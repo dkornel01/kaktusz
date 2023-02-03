@@ -13,10 +13,7 @@ header{
     font-weight: bolder;
 }
 header h1{
-    padding: auto;
-    margin: auto;
-    grid-template-columns: 1fr;
-    display: grid;
+    margin:10%;
     
 }
 a:hover {
@@ -25,6 +22,10 @@ a:hover {
 nav ul{
     list-style:square;
     
+}
+nav ul{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
 }
 nav ul a{
     text-decoration: none;
@@ -81,5 +82,7 @@ main{
         grid-template-columns: 1fr 1fr;
         display: grid;
     }
-    
+    nav ul{
+        grid-template-columns: 1fr;
+    }
 }

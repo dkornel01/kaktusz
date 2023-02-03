@@ -23,8 +23,6 @@ a:hover {
 
 nav {
     grid-area: n ;
-    
-    
 }
 nav ul{
     list-style:square ;
